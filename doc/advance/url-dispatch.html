@@ -1,4 +1,150 @@
-<h1 id="%e8%b7%af%e7%94%b1%e5%88%86%e5%8f%91">路由分发</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/58360786?s=200&v=4" title="Kayrx">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <title>Kayrx / url-dispatch</title>
+  </head>
+  <body class="vscode-light">
+    <div id="page" class="page-section-doc">
+      <div id="mnav">
+    
+        <div id="lnav">
+          <div id="left">
+            <a id="front" href="/"><img src="/kayrx.png"/></a>
+            <span id="dlnav">
+              <a class="tail" id="nav-doc" href="/doc/" >文档</a>
+              <a class="tail" id="nav-blog" href="/blog/2020/kayrxtishere.html" >博客</a>
+            </span>
+          </div>
+          <label ><a href="#" id="menu">M</a></label>
+        </div>
+        <div id="rnav">
+            <li ><a  id="nav-community" href="/community" >社区</a></li>
+            <li > <a id="nav-funding" href="/funding">赞助</a></li>
+        </div> 
+    </div>
+
+      <div id="content">
+        <div class="container"><div class="doc-page doc-section-advance-url-dispatch">
+  <div class="doc-nav">
+      
+  <details id="pc" open>
+      <summary id="dir"><strong>目录指南</strong></summary>
+
+      <details open>
+        <summary id="title"><strong>介绍</strong></summary>
+        <a class="doc-section-link-intro-whatis" href="/doc/intro/whatis.html">何为kayrx</a>
+        <a class="doc-section-link-intro-install" href="/doc/intro/install.html">安装</a>
+      </details>
+      
+      <details open>
+        <summary id="title"><strong>基本</strong></summary>
+        <a class="doc-section-link-basic-start" href="/doc/basic/start.html">入门</a>
+        <a class="doc-section-link-basic-app" href="/doc/basic/app.html">应用</a>
+        <a class="doc-section-link-basic-server" href="/doc/basic/server.html">服务器</a>
+        <a class="doc-section-link-basic-handler" href="/doc/basic/handler.html">处理器</a>
+        <a class="doc-section-link-basic-extractor" href="/doc/basic/extractor.html">提取器</a>
+      </details>
+      
+      <details open>
+        <summary id="title"><strong>高级</strong></summary>
+        <a class="doc-section-link-advance-request" href="/doc/advance/request.html">请求</a>
+        <a class="doc-section-link-advance-url-dispatch" href="/doc/advance/url-dispatch.html">路由分发</a>
+        <a class="doc-section-link-advance-response" href="/doc/advance/response.html">响应</a>
+        <a class="doc-section-link-advance-middleware" href="/doc/advance/middleware.html">中间件</a>
+        <a class="doc-section-link-advance-static-file" href="/doc/advance/static-file.html">静态文件</a>
+        <a class="doc-section-link-advance-error" href="/doc/advance/error.html">错误</a>
+        <a class="doc-section-link-advance-test" href="/doc/advance/test.html">测试</a>
+      </details>
+      
+      <details open>
+        <summary id="title"><strong>协议</strong></summary>
+        <a class="doc-section-link-protocol-websocket" href="/doc/protocol/websocket.html">Websocket</a>
+        <a class="doc-section-link-protocol-http2" href="/doc/protocol/http2.html">HTTP2</a>
+      </details>
+      
+      <details open>
+        <summary id="title"><strong>模式</strong></summary>
+        <a class="doc-section-link-pattern-autoreload" href="/doc/pattern/autoreload.html">自动重载</a>
+      </details>
+
+      <details open>
+        <summary id="title"><strong>数据库</strong></summary>
+        <a class="doc-section-link-database-diesel" href="/doc/database/diesel.html">Diesel</a>
+      </details>
+
+      <details open>
+        <summary id="title"><strong>深入kayrx</strong></summary>
+        <a class="doc-section-link-deep-server" href="/doc/deep/server.html">Httpserver</a>
+      </details>
+      
+  </details>
+
+  <!-- ===============================Mobile==================================== -->
+
+  <details id="mobile">
+      <summary id="dir"><strong>目录指南</strong></summary>
+
+      <details open>
+        <summary id="title"><strong>介绍</strong></summary>
+        <a class="doc-section-link-intro-whatis" href="/doc/intro/whatis.html">何为kayrx</a>
+        <a class="doc-section-link-intro-install" href="/doc/intro/install.html">安装</a>
+      </details>
+      
+      <details open>
+        <summary id="title"><strong>基本</strong></summary>
+        <a class="doc-section-link-basic-start" href="/doc/basic/start.html">入门</a>
+        <a class="doc-section-link-basic-app" href="/doc/basic/app.html">应用</a>
+        <a class="doc-section-link-basic-server" href="/doc/basic/server.html">服务器</a>
+        <a class="doc-section-link-basic-handler" href="/doc/basic/handler.html">处理器</a>
+        <a class="doc-section-link-basic-extractor" href="/doc/basic/extractor.html">提取器</a>
+      </details>
+      
+      <details open>
+        <summary id="title"><strong>高级</strong></summary>
+        <a class="doc-section-link-advance-request" href="/doc/advance/request.html">请求</a>
+        <a class="doc-section-link-advance-url-dispatch" href="/doc/advance/url-dispatch.html">路由分发</a>
+        <a class="doc-section-link-advance-response" href="/doc/advance/response.html">响应</a>
+        <a class="doc-section-link-advance-middleware" href="/doc/advance/middleware.html">中间件</a>
+        <a class="doc-section-link-advance-static-file" href="/doc/advance/static-file.html">静态文件</a>
+        <a class="doc-section-link-advance-error" href="/doc/advance/error.html">错误</a>
+        <a class="doc-section-link-advance-test" href="/doc/advance/test.html">测试</a>
+      </details>
+      
+      <details open>
+        <summary id="title"><strong>协议</strong></summary>
+        <a class="doc-section-link-protocol-websocket" href="/doc/protocol/websocket.html">Websocket</a>
+        <a class="doc-section-link-protocol-http2" href="/doc/protocol/http2.html">HTTP2</a>
+      </details>
+      
+      <details open>
+        <summary id="title"><strong>模式</strong></summary>
+        <a class="doc-section-link-pattern-autoreload" href="/doc/pattern/autoreload.html">自动重载</a>
+      </details>
+
+      <details open>
+        <summary id="title"><strong>数据库</strong></summary>
+        <a class="doc-section-link-database-diesel" href="/doc/database/diesel.html">Diesel</a>
+      </details>
+
+      <details open>
+        <summary id="title"><strong>深入kayrx</strong></summary>
+        <a class="doc-section-link-deep-server" href="/doc/deep/server.html">Httpserver</a>
+      </details>
+      
+  </details>
+
+
+  </div>
+  <div class="doc-content"><h1 id="%e8%b7%af%e7%94%b1%e5%88%86%e5%8f%91">路由分发</h1>
 <p>URL分发提供了一种使用简单的模式匹配将URL映射到处理程序代码的方法. 如果其中一种模式与与请求关联的路径信息匹配，则调用特定的处理程序对象。</p>
 <blockquote>
 <p>请求处理程序是一个函数，该函数接受零个或多个可以从请求中提取的参数（即<code>impl FromRequest</code>），并返回可以转换为<code>HttpResponse</code>的类型(即<code>impl Responder</code>). 有关更多信息，请参见<a href="../basic/handler.html">处理程序</a>部分。</p>
@@ -12,7 +158,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
     HttpResponse::<span class="hljs-literal">Ok</span>().body(<span class="hljs-string">"Hello"</span>)
 }
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     HttpServer::new(|| {
         App::new()
@@ -84,7 +230,7 @@ arguments provided to a route configuration returns <code>false</code> during a 
 <pre><code class="language-rust"><div>/{foo}/bar/baz
 </div></code></pre>
 <p>可变部分(替换标记)用<code>{标识符}</code>的形式指定，其中，该配置 &quot;接受任何字符到下一个斜线字符并使用它作为<code>HttpRequest.match_info()</code>对象中的名称&quot;.</p>
-<p>模式中的替换标记匹配正则表达式: <code>\[^{}/]+</code></p>
+<p>模式中的替换标记匹配正则表达式: <code>[^{}/]+</code></p>
 <p><code>match_info</code>是代表根据路由模式从URL提取的<code>Params</code>对象的动态部分 。它可以作<code>request.match_info</code>使用。例如，以下模式定义一个文字段<code>（foo）</code>和两个替换标记（<code>baz</code>和<code>bar</code>）：</p>
 <pre><code class="language-rust"><div>foo/{baz}/{bar}
 </div></code></pre>
@@ -107,7 +253,7 @@ if this route pattern was used:</p>
 <pre><code class="language-rust"><div>foo/{name}.{ext}
 </div></code></pre>
 <p>字面路径<code>/foo/biz.html</code>将匹配上述路由模式，并且匹配结果将为<code>Params {'name'：'biz'，'ext'：'html'}</code>。发生这种情况是因为的字面部分(句点)在两个替换标记<code>{name}</code>和<code>{ext}</code>之间。</p>
-<p>替换标记可以选择指定正则表达式，该正则表达式将用于确定路径段是否应与标记匹配。若要指定替换标记仅应匹配正则表达式定义的一组特定字符，则必须使用稍微扩展形式的替换标记语法。在大括号内，替换标记名必须后跟一个冒号，然后是正则表达式。与替换标记<code>\[^ /] +</code>关联的默认正则表达式匹配是一个或多个非斜杠字符。例如，在内部，替换标记<code>{foo}</code>可以更详细地拼写为<code>{foo：\[^ /] +}</code>。您可以将其更改为任意正则表达式以匹配任意字符序列，例如<code>{foo：\ d +}</code>以仅匹配数字。</p>
+<p>替换标记可以选择指定正则表达式，该正则表达式将用于确定路径段是否应与标记匹配。若要指定替换标记仅应匹配正则表达式定义的一组特定字符，则必须使用稍微扩展形式的替换标记语法。在大括号内，替换标记名必须后跟一个冒号，然后是正则表达式。与替换标记<code>[^ /] +</code>关联的默认正则表达式匹配是一个或多个非斜杠字符。例如，在内部，替换标记<code>{foo}</code>可以更详细地拼写为<code>{foo：[^ /] +}</code>。您可以将其更改为任意正则表达式以匹配任意字符序列，例如<code>{foo：\ d +}</code>以仅匹配数字。</p>
 <p>段必须至少包含一个字符才能匹配段替换标记。例如，对于URL<code>/ abc /</code>：</p>
 <ul>
 <li>*/abc/{foo}*将不匹配</li>
@@ -154,7 +300,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
     HttpResponse::<span class="hljs-literal">Ok</span>().body(<span class="hljs-built_in">format!</span>(<span class="hljs-string">"User detail: {}"</span>, path.<span class="hljs-number">0</span>))
 }
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     HttpServer::new(|| {
         App::new().service(
@@ -181,7 +327,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
     <span class="hljs-literal">Ok</span>(<span class="hljs-built_in">format!</span>(<span class="hljs-string">"Values {} {} {} {}"</span>, v1, v2, v3, v4))
 }
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     <span class="hljs-keyword">use</span> kayrx::web::{web, App, HttpServer};
 
@@ -214,7 +360,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
     <span class="hljs-literal">Ok</span>(<span class="hljs-built_in">format!</span>(<span class="hljs-string">"Path {:?}"</span>, path))
 }
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     <span class="hljs-keyword">use</span> kayrx::web::{web, App, HttpServer};
 
@@ -232,7 +378,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
     <span class="hljs-literal">Ok</span>(<span class="hljs-built_in">format!</span>(<span class="hljs-string">"Welcome {}! id: {}"</span>, info.<span class="hljs-number">0</span>, info.<span class="hljs-number">1</span>))
 }
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     <span class="hljs-keyword">use</span> kayrx::web::{App, HttpServer};
 
@@ -251,7 +397,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
 <pre><code class="language-rust"><div><span class="hljs-keyword">use</span> kayrx::web::{web, <span class="hljs-built_in">Result</span>};
 <span class="hljs-keyword">use</span> serde::Deserialize;
 
-<span class="hljs-meta">#\[derive(Deserialize)]</span>
+<span class="hljs-meta">#[derive(Deserialize)]</span>
 <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Info</span></span> {
     username: <span class="hljs-built_in">String</span>,
 }
@@ -261,7 +407,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
     <span class="hljs-literal">Ok</span>(<span class="hljs-built_in">format!</span>(<span class="hljs-string">"Welcome {}!"</span>, info.username))
 }
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     <span class="hljs-keyword">use</span> kayrx::web::{App, HttpServer};
 
@@ -282,14 +428,14 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
 <pre><code class="language-rust"><div><span class="hljs-keyword">use</span> kayrx::web::{guard, http::header, HttpRequest, HttpResponse, <span class="hljs-built_in">Result</span>};
 
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">index</span></span>(req: HttpRequest) -&gt; <span class="hljs-built_in">Result</span>&lt;HttpResponse&gt; {
-    <span class="hljs-keyword">let</span> url = req.url_for(<span class="hljs-string">"foo"</span>, &amp;\[<span class="hljs-string">"1"</span>, <span class="hljs-string">"2"</span>, <span class="hljs-string">"3"</span>])?; <span class="hljs-comment">// &lt;- generate url for "foo" resource</span>
+    <span class="hljs-keyword">let</span> url = req.url_for(<span class="hljs-string">"foo"</span>, &amp;[<span class="hljs-string">"1"</span>, <span class="hljs-string">"2"</span>, <span class="hljs-string">"3"</span>])?; <span class="hljs-comment">// &lt;- generate url for "foo" resource</span>
 
     <span class="hljs-literal">Ok</span>(HttpResponse::Found()
         .header(header::LOCATION, url.as_str())
         .finish())
 }
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     <span class="hljs-keyword">use</span> kayrx::web::{web, App, HttpServer};
 
@@ -314,13 +460,13 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
 <pre><code class="language-rust"><div><span class="hljs-keyword">use</span> kayrx::web::{HttpRequest, Responder};
 
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">index</span></span>(req: HttpRequest) -&gt; <span class="hljs-keyword">impl</span> Responder {
-    <span class="hljs-keyword">let</span> url = req.url_for(<span class="hljs-string">"youtube"</span>, &amp;\[<span class="hljs-string">"oHg5SJYRHA0"</span>]).unwrap();
+    <span class="hljs-keyword">let</span> url = req.url_for(<span class="hljs-string">"youtube"</span>, &amp;[<span class="hljs-string">"oHg5SJYRHA0"</span>]).unwrap();
     <span class="hljs-built_in">assert_eq!</span>(url.as_str(), <span class="hljs-string">"https://youtube.com/watch/oHg5SJYRHA0"</span>);
 
     url.into_string()
 }
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     <span class="hljs-keyword">use</span> kayrx::web::{web, App, HttpServer};
 
@@ -348,7 +494,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
     HttpResponse::<span class="hljs-literal">Ok</span>().body(<span class="hljs-string">"Hello"</span>)
 }
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     <span class="hljs-keyword">use</span> kayrx::web::{web, App, HttpServer};
 
@@ -367,7 +513,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
 <p>可以仅针对<code>GET</code>请求注册路径规范化：</p>
 <pre><code class="language-rust"><div><span class="hljs-keyword">use</span> kayrx::web::{http::Method, middleware, web, App, HttpServer};
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     HttpServer::new(|| {
         App::new()
@@ -391,7 +537,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
     HttpResponse::<span class="hljs-literal">Ok</span>().body(<span class="hljs-built_in">format!</span>(<span class="hljs-string">"User detail: {}"</span>, path.<span class="hljs-number">0</span>))
 }
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     HttpServer::new(|| {
         App::new().service(
@@ -419,7 +565,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
     }
 }
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     <span class="hljs-keyword">use</span> kayrx::web::{web, App, HttpServer};
 
@@ -442,7 +588,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
 <p>您可以通过将任何谓词值包装在<code>Not</code>谓词中来反转其含义。例如，如果要为除 <code>GET</code>以外的所有方法返回 <code>METHOD NOT ALLOWED</code>响应，请执行以下操作：</p>
 <pre><code class="language-rust"><div><span class="hljs-keyword">use</span> kayrx::web::{guard, web, App, HttpResponse, HttpServer};
 
-<span class="hljs-meta">#\[kayrx::main]</span>
+<span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     HttpServer::new(|| {
         App::new().route(
@@ -465,7 +611,7 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
 </div></code></pre>
 <h2 id="%e6%9b%b4%e6%94%b9%e9%bb%98%e8%ae%a4%e7%9a%84not-found%e5%93%8d%e5%ba%94">更改默认的<code>Not Found</code>响应</h2>
 <p>如果在路由表中找不到路径模式或资源找不到匹配的路由，则使用默认资源。默认响应是<code>NOT FOUND</code>。可以使用<code>App::default_service()</code>来覆盖<code>NOT FOUND</code>响应。此方法接受与使用<code>App::service()</code>进行常规资源配置方法相同的配置功函数.</p>
-<pre><code class="language-rust"><div><span class="hljs-meta">#\[kayrx::main]</span>
+<pre><code class="language-rust"><div><span class="hljs-meta">#[kayrx::main]</span>
 async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() -&gt; std::io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
     HttpServer::new(|| {
         App::new()
@@ -483,6 +629,30 @@ async <span class="hljs-function"><span class="hljs-keyword">fn</span> <span cla
 </div></code></pre>
 
 
-[set title Kayrx / url-dispatch]
-[set doc-section advance-url-dispatch]
-[stash doc-content][require raw ../_side.html]
+
+
+</div>
+</div>
+
+</div>
+      </div>
+
+      <div id="footer">
+        &copy; 2019  <a href="https://github.com/kayrx/kayrx">Kayrx</a>
+      </div>
+    </div>
+    <script async>
+      window.onload = function() {
+            let menu = document.getElementById('menu');
+            menu.addEventListener('click', function() {
+                let nav = document.getElementById('rnav');
+                if (nav.style.height == 'auto') {
+                        nav.style.height = '0';
+                }else{
+                        nav.style.height = 'auto';
+                }
+            }, false)
+    }
+</script>
+  </body>
+</html> 

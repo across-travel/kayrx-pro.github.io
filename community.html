@@ -1,4 +1,39 @@
-<div id="community">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/58360786?s=200&v=4" title="Kayrx">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <title>Kayrx / community</title>
+  </head>
+  <body class="vscode-light">
+    <div id="page" class="page-section-community">
+      <div id="mnav">
+    
+        <div id="lnav">
+          <div id="left">
+            <a id="front" href="/"><img src="/kayrx.png"/></a>
+            <span id="dlnav">
+              <a class="tail" id="nav-doc" href="/doc/" >文档</a>
+              <a class="tail" id="nav-blog" href="/blog/2020/kayrxtishere.html" >博客</a>
+            </span>
+          </div>
+          <label ><a href="#" id="menu">M</a></label>
+        </div>
+        <div id="rnav">
+            <li ><a  id="nav-community" href="/community" >社区</a></li>
+            <li > <a id="nav-funding" href="/funding">赞助</a></li>
+        </div> 
+    </div>
+
+      <div id="content">
+        <div class="container"><div id="community">
     <div>
       <span style="font-size: 2rem;">社区</span><span style="font-size: 1.5rem;"> - 生活中最美好的事情是分享</span>
     </div><br>
@@ -10,13 +45,33 @@
     <p>这是重要的项目以及它们的github存储库和相关资源链接：</p>
 
       <li><a href="https://github.com/kayrx/kayrx" target="_black">kayrx</a></li>
-     <li><a href="https://github.com/kayrx/keclc" target="_black">keclc</a></li>
       <li><a href="https://github.com/kayrx/awesome" target="_black">Awesome</a></li><br>
       
       <p>Kayrx具有MIT许可, 我们是一个热情的社区，不要害怕参与.</p>
 
   </div>
 
-[set title Kayrx / community]
-[set page-section community]
-[stash content][require raw _layout.html]
+
+
+</div>
+      </div>
+
+      <div id="footer">
+        &copy; 2019  <a href="https://github.com/kayrx/kayrx">Kayrx</a>
+      </div>
+    </div>
+    <script async>
+      window.onload = function() {
+            let menu = document.getElementById('menu');
+            menu.addEventListener('click', function() {
+                let nav = document.getElementById('rnav');
+                if (nav.style.height == 'auto') {
+                        nav.style.height = '0';
+                }else{
+                        nav.style.height = 'auto';
+                }
+            }, false)
+    }
+</script>
+  </body>
+</html>
